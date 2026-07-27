@@ -28,8 +28,8 @@
 		<section class="hero">
 			<div class="intro shell">
 				<p class="lead">
-					Hi! My name is Mariia and I`m taking best out of the two
-					<span class="display accent">worlds</span>
+					Hi! I`m Mariia, a senior frontend engineer who thrives where design meets code — the
+					best of both <span class="display accent">worlds</span> — and owns what I ship
 				</p>
 			</div>
 
@@ -103,8 +103,8 @@
 
 	.lead {
 		margin: 0 auto;
-		max-width: 22ch;
-		font-size: clamp(24px, 3.6vw, 40px);
+		max-width: 30ch;
+		font-size: clamp(22px, 3.4vw, 38px);
 		line-height: 1.3;
 	}
 

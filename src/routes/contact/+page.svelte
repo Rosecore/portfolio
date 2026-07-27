@@ -106,8 +106,8 @@
 		position: absolute;
 		right: -40px;
 		bottom: -40px;
-		width: 200px;
-		height: 200px;
+		width: 100px;
+		height: 100px;
 		border-radius: 50%;
 		background-image: var(--spectrum);
 		background-size: 360% 100%;
