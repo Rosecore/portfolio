@@ -1,0 +1,87 @@
+:root {
+	--bg: #ffffff;
+	--ink: #0a0a0a;
+	--muted: #6b6b6b;
+	--card: #ececef;
+	--card-hover: #e3e3e7;
+
+	--font-mono: 'Space Mono', ui-monospace, 'SFMono-Regular', 'Menlo', monospace;
+	--font-display: 'Archivo Black', system-ui, 'Segoe UI', sans-serif;
+
+	--maxw: 1180px;
+	--pad: clamp(20px, 5vw, 64px);
+	--nav-h: 74px;
+
+	/* left→right spectrum lifted from the frames */
+	--spectrum: linear-gradient(
+		90deg,
+		#ff1fa8 0%,
+		#c026ff 13%,
+		#3b5bff 28%,
+		#00c2ff 42%,
+		#1fd94a 58%,
+		#9dee00 70%,
+		#ffd400 82%,
+		#ff7a00 91%,
+		#ff2200 100%
+	);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--ink);
+	font-family: var(--font-mono);
+	font-size: 17px;
+	line-height: 1.55;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--font-display);
+	font-weight: 400;
+	letter-spacing: -0.01em;
+	line-height: 1.02;
+	margin: 0;
+}
+
+.display {
+	font-family: var(--font-display);
+}
+
+.shell {
+	max-width: var(--maxw);
+	margin-inline: auto;
+	padding-inline: var(--pad);
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
