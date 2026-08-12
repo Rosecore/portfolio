@@ -4,13 +4,8 @@
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import { projects } from '$lib/data/projects';
 
-	// The home page is a locked two-panel deck. You only reach the projects
-	// by clicking PROJECTS (which sets #work); the browser never rests on the
-	// middle of the gradient circle. State is driven by the URL hash so the
-	// nav's WORK link and the back button work too.
 	let atProjects = $derived(page.url.hash === '#projects');
 
-	// don't animate the very first paint (e.g. landing straight on /#work)
 	let ready = $state(false);
 	onMount(() => {
 		ready = true;
@@ -18,7 +13,7 @@
 
 	let workEl: HTMLElement | undefined = $state();
 	$effect(() => {
-		if (!atProjects && workEl) workEl.scrollTop = 0; // reset when returning to hero
+		if (!atProjects && workEl) workEl.scrollTop = 0; 
 	});
 </script>
 
@@ -226,6 +221,14 @@
 	@media (max-width: 720px) {
 		.grid {
 			grid-template-columns: 1fr;
+		}
+
+		.scroll {
+			bottom: clamp(20px, 4vh, 48px);
+		}
+
+		.back {
+			margin-top: clamp(-40px, -5vh, -16px);
 		}
 	}
 </style>

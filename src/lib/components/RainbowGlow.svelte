@@ -37,7 +37,6 @@
 		opacity: 1;
 	}
 
-	/* --- hero: rainbow rises from the bottom --- */
 	.glow--hero {
 		bottom: 0;
 		height: 62%;
@@ -47,7 +46,6 @@
 		mask-image: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0.55) 45%, transparent 100%);
 	}
 
-	/* --- band: rainbow sits across the top --- */
 	.glow--band {
 		top: 0;
 		height: 42%;
@@ -57,7 +55,6 @@
 		mask-image: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.5) 45%, transparent 100%);
 	}
 
-	/* --- the white circle punched over the rainbow --- */
 	.circle {
 		position: absolute;
 		left: 50%;

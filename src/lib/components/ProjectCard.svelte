@@ -2,8 +2,6 @@
 	import type { Project } from '$lib/data/projects';
 
 	let { project, total = 1 }: { project: Project; total?: number } = $props();
-
-	// give every card its own window onto the spectrum
 	let hue = $derived(total > 1 ? `${((project.index - 1) / (total - 1)) * 100}%` : '50%');
 </script>
 
@@ -40,7 +38,6 @@
 		transform: translateY(-5px);
 	}
 
-	/* each card's slice of the rainbow, glowing out of the bottom-right */
 	.glow {
 		position: absolute;
 		right: -34px;
